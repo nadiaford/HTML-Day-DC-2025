@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="icon" href="icons8.png" type="image/png"> 
     <title>HTML DAY DC</title>
     <style>
@@ -47,12 +47,13 @@
             padding: 10px;
             overflow: auto; /* Allows scrolling if art is too big */
             white-space: pre-wrap; /* Wraps long lines */
+            max-width: 100%;
             word-wrap: break-word; /* Breaks words if necessary */
         }
 
         footer {
             text-align: center;
-    
+            margin-top: 2em;
         }
 
         a {
@@ -64,7 +65,48 @@
             cursor: pointer;
             color: red;
         }
+ 
+    /* Responsive tweaks */
+ 
+        @media (max-width: 768px) {
 
+      body{
+        margin: 0;
+        padding: 2em 1em;;
+      } 
+            
+      h1 {
+        font-size: 3em;
+        text-align: center;
+      }
+
+      .faq {
+        text-align: right;
+      }
+
+     pre {
+        font-size: 11px;
+        padding: auto;
+      }
+
+      .details {
+        font-size: 0.95em;
+      }
+
+      iframe {
+        height: 180px;
+        width: 460px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8em;
+      }
+
+      /*pre {
+        font-size: 9px;
+      } */
       
     </style>
 </head>
@@ -81,7 +123,6 @@
         __     `YMMM| OP'~"YOOOOOOOOOOOP"~`YO |MMMP'     __
       ,dMMMb.     ~~' OO     `YOOOOOP'     OO `~~     ,dMMMb.
    _,dP~  `YMba_      OOb      `OOO'      dOO      _aMMP'  ~Yb._
-  
                `YMMMM\`OOOo     OOO     oOOO'/MMMMP'
        ,aa.     `~YMMb `OOOb._,dOOOb._,dOOO'dMMP~'       ,aa.
      ,dMYYMba._         `OOOOOOOOOOOOOOOOO'          _,adMYYMb.
@@ -95,8 +136,8 @@
         <h1>HTML DAY DC 2025</h1>
         <div class="details">
              <p>Washington, DC</p>
-                <p>June 21, 2025</p>
-                    <p>2pm - 4pm</p>
+                <p>August 2, 2025</p>
+                    <p>5pm - 8pm</p>
                     <a href="#">RSVP</a>
                 </div>
                     <div class="faq">
